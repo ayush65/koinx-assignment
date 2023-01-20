@@ -1,0 +1,106 @@
+/** @format */
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  width: 22rem;
+  height: 22rem;
+  border: 1px solid #dbdcdf;
+  border-radius: 8px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.logo-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 4px;
+}
+
+.close-btn {
+  background-color: #aaaaaa;
+  background: transparent;
+  outline: none;
+  border: none;
+  font-weight: 500;
+}
+
+.modal-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.crypto-price,
+.crypto-oneday-price,
+.crypto-sevendat-price,
+.crypto-marketcap,
+.crypto-volume,
+.crypto-supply {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: flex-start;
+}
+
+.modal-info-wrapper-one {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.modal-info-wrapper-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tag-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #0f1629;
+}
+
+.modified-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+@media only screen and (max-width: 650px) {
+  .modal-info-wrapper-one {
+    gap: 0.8rem;
+  }
+}

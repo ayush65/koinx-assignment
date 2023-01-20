@@ -1,0 +1,201 @@
+/** @format */
+
+.table-container {
+  margin: 1rem 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+table {
+  background-color: transparent;
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px transparent;
+}
+
+tbody {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 22.5px;
+}
+
+tr {
+  height: 58px;
+  padding: 5rem;
+}
+
+thead {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: black;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.table-header {
+  padding: 1rem 1.5rem;
+  /* text-align: left; */
+}
+
+.table-header-name {
+  text-align: left;
+}
+
+.crypto-row-data {
+  background-color: transparent;
+  border-bottom-width: 1px;
+  box-shadow: inset 0 0 0 9999px transparent;
+}
+
+.crypto-id {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.crypto-name {
+  display: flex;
+  gap: 4px;
+  padding: 1rem;
+  flex-wrap: nowrap;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 5%;
+  margin: 1rem;
+}
+
+.crypto-id,
+.crypto-price,
+.crypto-oneday-price-wrapper,
+.crypto-sevenday-price-wrapper,
+.crypto-market-cap,
+.crypto-volume-wrapper,
+.crypto-supply-wrapper,
+.crypto-more-option {
+  padding: 1rem;
+}
+
+.crypto-oneday-price-table,
+.crypto-sevenday-price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.crypto-supply-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-success {
+  color: green;
+}
+
+.text-danger {
+  color: red;
+}
+
+.text-muted {
+  color: #808a9d;
+}
+
+.table-mobile-view {
+  position: relative;
+  left: 15rem;
+  width: 100px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .crypto-id,
+  .crypto-price,
+  .crypto-oneday-price-wrapper,
+  .crypto-sevenday-price-wrapper,
+  .crypto-market-cap,
+  .crypto-volume-wrapper,
+  .crypto-supply-wrapper,
+  .crypto-more-option {
+    padding: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .table-container {
+    margin: 1rem 0rem;
+  }
+
+  .table-header {
+    padding: 1rem;
+    /* text-align: left; */
+  }
+
+  .crypto-id,
+  .crypto-price,
+  .crypto-oneday-price-wrapper,
+  .crypto-sevenday-price-wrapper,
+  .crypto-market-cap,
+  .crypto-volume-wrapper,
+  .crypto-supply-wrapper,
+  .crypto-more-option {
+    padding: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .table-container {
+    margin: -0.8rem -13rem;
+    width: 500px;
+  }
+
+  .crypto-id,
+  .crypto-price,
+  .crypto-oneday-price-wrapper,
+  .crypto-sevenday-price-wrapper,
+  .crypto-market-cap,
+  .crypto-volume-wrapper,
+  .crypto-supply-wrapper,
+  .crypto-more-option {
+    padding: 0.2rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .table-desktop-view {
+    display: none;
+    /* visibility: hidden; */
+  }
+
+  .crypto-id,
+  .crypto-price,
+  .crypto-oneday-price-wrapper,
+  .crypto-sevenday-price-wrapper,
+  .crypto-market-cap,
+  .crypto-volume-wrapper,
+  .crypto-supply-wrapper,
+  .crypto-more-option {
+    padding: 0 1rem;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: -25%;
+    margin: 1rem;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .table-mobile-view {
+    display: none;
+    /* visibility: hidden; */
+  }
+}
